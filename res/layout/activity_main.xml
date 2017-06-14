@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ban" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+        
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/backgroundframe"
+             >
+
+        <TextView
+            android:id="@+id/tvTien"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"           
+            android:background="@drawable/backgroundview"
+            android:text="500" 
+            />
+        
+	</FrameLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="40dp"
+            android:layout_height="47dp"
+            android:src="@drawable/phinh" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:button="@drawable/hinhamthanh"
+            android:text="Music" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvThoiGian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:text="00:01:00" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <GridView
+            android:id="@+id/gvBanCo"
+            android:layout_width="wrap_content"
+            android:layout_height="199dp"
+            android:numColumns="3" >
+        </GridView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <ImageView
+            android:id="@+id/xingau1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="90dp"
+            android:src="@drawable/hinhdongxingau" />
+
+        <ImageView
+            android:id="@+id/xingau2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/hinhdongxingau" />
+
+        <ImageView
+            android:id="@+id/xingau3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="LacXiNgau"
+            android:src="@drawable/hinhdongxingau" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:onClick="LacXiNgau"
+        android:background="@drawable/buttonbatdau"
+        android:text="@null" />
+    
+</LinearLayout>
